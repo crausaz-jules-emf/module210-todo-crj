@@ -49,7 +49,7 @@ jobs:
             https://todo.julescrausaz.emf-informatique.ch/
           uploadArtifacts: false
           temporaryPublicStorage: true
-          configPath: './lighthouserc.json'
+          configPath: './todo-app/lighthouserc.json'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
