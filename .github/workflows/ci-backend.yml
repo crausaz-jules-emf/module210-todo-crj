@@ -7,7 +7,7 @@ on:
 
 env:
   REG_NAME: "exo.container-registry.com" # Nom du registre sans "azurecr.io"
-  IMAGE_NAME: "backend-app" # Nom de votre image dans acr
+  IMAGE_NAME: "todo-app" # Nom de votre image dans acr
 
 jobs:
   build-and-deploy:
