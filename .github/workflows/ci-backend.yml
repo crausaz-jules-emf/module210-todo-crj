@@ -13,11 +13,11 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #créer une petite vm ubuntu 
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 # copie tout le code comme un git clone sur la vm et elle va executer les steps.
 
       - name: connection à la repository
         run: |
