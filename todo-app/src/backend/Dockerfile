@@ -5,8 +5,6 @@ WORKDIR /usr/src/app
 # Copier le fichier package.json et package-lock.json
 COPY package*.json ./
 # Installer les dépendances de l'application
-RUN npm install -g npm@latest
-
 RUN npm install 
 # Copier le reste des fichiers de l'application dans le conteneur
 COPY . .
@@ -15,3 +13,4 @@ EXPOSE 8080
 # Démarrer l'application
 CMD [ "npm", "start" ]
  #test
+#
